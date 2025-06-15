@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashif M - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f7ebd9;
+      color: #3d2e1e;
+      scroll-behavior: smooth;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: url('./Image/Ashif_Vector.png') center/cover no-repeat;
+      z-index: -1;
+      opacity: 0.25;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: opacity 0.5s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.5rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 5rem auto;
+      padding: 2rem;
+      background: #fff7ec;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      opacity: 0;
+      transform: translateY(60px);
+      transition: all 0.8s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2 {
+      color: #c97829;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .tools {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .tools img {
+      width: 40px;
+      height: 40px;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #3d2e1e;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c97829;
+    }
+
+    .social-links {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .social-links a {
+      margin: 0 1rem;
+      text-decoration: underline;
+      color: #3d2e1e;
+    }
+
+    .social-links a:hover {
+      color: #c97829;
+    }
+
+    footer {
+      background: #3d2e1e;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 5rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+      }
+
+      section {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+      }
+
+      .tools {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .social-links a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background stays fixed -->
+  <div class="background"></div>
+
+  <!-- Hero Section -->
+  <header id="hero">
+    <h1>Ashif M</h1>
+    <p>Motion Graphics Designer</p>
+  </header>
+
+  <!-- Resume Section -->
+  <section>
+    <h2>Resume</h2>
+    <p><strong>Position:</strong> Sr. Associate - DET at Edize EdTech Pvt. Ltd. (Since May 15, 2025)</p>
+    <ul>
+      <li>Created 2D motion graphics for Edize learning app.</li>
+      <li>Managed app media and created over 70% of company designs (ID card, posters, social media).</li>
+    </ul>
+    <p><strong>Education:</strong><br>
+      Professional Diploma in Multimedia and Animation - Smart Media College (2022–2023)<br>
+      BCA - IGNOU (Pursuing)</p>
+    <p><strong>Tools:</strong></p>
+    <div class="tools">
+      <img src="./Image/after-effects.png" alt="AE">
+      <img src="./Image/premiere-pro.png" alt="PR">
+      <img src="./Image/illustrator.png" alt="PS">
+      <img src="./Image/illustrator.png" alt="AI">
+    </div>
+    <p><strong>Skills:</strong> Motion Design, Typography, 2D/3D Animation, AI Integration</p>
+  </section>
+
+  <!-- Works Section -->
+  <section>
+    <h2>Works</h2>
+    <p>Explore my works on <a href="https://be.net/ashifm" target="_blank">Behance</a></p>
+  </section>
+
+  <!-- Contact Section -->
+  <section>
+    <h2>Let's work together</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="social-links">
+      <p>Or reach me at:</p>
+      <a href="https://be.net/ashifm" target="_blank">Behance</a>
+      <a href="https://wa.me/918606131849" target="_blank">WhatsApp</a>
+      <a href="mailto:ashifm1417@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Ashif M | All rights reserved
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+
+    function revealOnScroll() {
+      const windowHeight = window.innerHeight;
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < windowHeight - 100) {
+          section.classList.add('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+</html>
